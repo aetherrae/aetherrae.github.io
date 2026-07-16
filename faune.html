@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" href="img/icon.png" type="image/png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/lightgallery.css">
+<link rel="stylesheet"href="css/justifiedGallery.css">
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/lightgallery.js"></script>
+<script src="js/lg-fullscreen.js"></script>
+<script src="js/lg-zoom.js"></script>
+<script src="js/lg-autoplay.js"></script>
+<script src="js/lg-pager.js"></script>
+<script src="js/lg-thumbnail.js"></script>
+<script src="js/lg-hash.js"></script>
+<script src="js/lg-rotate.js"></script>
+<script src="js/jquery.justifiedGallery.min.js"></script>
+</head>
+
+<body>
+
+<div id="header"><script>header();</script></div>
+
+<div id="titre">FAUNE</div>
+<hr id="hr_sep"/>
+
+<div id="mygallery">
+	<a class=gallery-item data-src="gallery/2013-07-16(052).jpg" data-sub-html="<h4>Téju noir et blanc</h4>"><img class="img-responsive" src="gallery/thumb/2013-07-16(052).jpg"><div class="overlay"><h4>Téju noir et blanc</h4></div></a>
+	<a class=gallery-item data-src="gallery/2015-12-01(006).jpg" data-sub-html="<h4>Héron cendré aux Maldives</h4>"><img class="img-responsive" src="gallery/thumb/2015-12-01(006).jpg"><div class="overlay"><h4>Héron cendré aux Maldives</h4></div></a>
+	<a class=gallery-item data-src="gallery/2015-12-10(026).jpg" data-sub-html="<h4>Lézard vert à crête du Sri Lanka</h4>"><img class="img-responsive" src="gallery/thumb/2015-12-10(026).jpg"><div class="overlay"><h4>Lézard vert à crête du Sri Lanka</h4></div></a>
+	<a class=gallery-item data-src="gallery/2015-12-10(042).jpg" data-sub-html="<h4>Lézard vert à crête du Sri Lanka</h4>"><img class="img-responsive" src="gallery/thumb/2015-12-10(042).jpg"><div class="overlay"><h4>Lézard vert à crête du Sri Lanka</h4></div></a>
+	<a class=gallery-item data-src="gallery/2023-04-03(001).jpg" data-sub-html="<h4>Loriquet</h4>"><img class="img-responsive" src="gallery/thumb/2023-04-03(001).jpg"><div class="overlay"><h4>Loriquet</h4></div></a>
+	<a class=gallery-item data-src="gallery/2023-04-03(012).jpg" data-sub-html="<h4>Anolis vert</h4>"><img class="img-responsive" src="gallery/thumb/2023-04-03(012).jpg"><div class="overlay"><h4>Anolis vert</h4></div></a>
+	<a class=gallery-item data-src="gallery/2023-04-04(025).jpg" data-sub-html="<h4>Anolis vert</h4>"><img class="img-responsive" src="gallery/thumb/2023-04-04(025).jpg"><div class="overlay"><h4>Anolis vert</h4></div></a>
+	<a class=gallery-item data-src="gallery/2023-04-12(008).jpg" data-sub-html="<h4>Frégate</h4>"><img class="img-responsive" src="gallery/thumb/2023-04-12(008).jpg"><div class="overlay"><h4>Frégate</h4></div></a>
+	<a class=gallery-item data-src="gallery/2023-07-07(003).jpg" data-sub-html="<h4>Faisan de Colchide</h4>"><img class="img-responsive" src="gallery/thumb/2023-07-07(003).jpg"><div class="overlay"><h4>Faisan de Colchide</h4></div></a>
+	<a class=gallery-item data-src="gallery/2024-01-07(001).jpg" data-sub-html="<h4>Bouvreuil</h4>"><img class="img-responsive" src="gallery/thumb/2024-01-07(001).jpg"><div class="overlay"><h4>Bouvreuil</h4></div></a>
+	<a class=gallery-item data-src="gallery/2024-09-12(011).jpg" data-sub-html="<h4>Chevreuil</h4>"><img class="img-responsive" src="gallery/thumb/2024-09-12(011).jpg"><div class="overlay"><h4>Chevreuil</h4></div></a>
+	<a class=gallery-item data-src="gallery/2024-09-14(002).jpg" data-sub-html="<h4>Biche</h4>"><img class="img-responsive" src="gallery/thumb/2024-09-14(002).jpg"><div class="overlay"><h4>Biche</h4></div></a>
+	<a class=gallery-item data-src="gallery/2025-08-11(001).jpg" data-sub-html="<h4>Pic vert</h4>"><img class="img-responsive" src="gallery/thumb/2025-08-11(001).jpg"><div class="overlay"><h4>Pic vert</h4></div></a>
+</div>
+
+<script>
+	$('#mygallery')
+	.justifiedGallery({
+		rowHeight : 187,
+		maxRowHeight: null,
+		margins : 10,
+		lastRow : 'nojustify'
+	})
+	.on('jg.complete', function () {
+		lightGallery(document.getElementById('mygallery'), {
+			speed: 400,
+			showThumbByDefault: false, // AU DÉMARRAGE : caché mais bouton visible
+		});
+	});
+</script>
+
+<div id="footer">Textes & Photographies © Jocelyn DIOT | Toute reproduction ou représentation est interdite sans autorisation écrite de l'auteur.</div><br>
+
+</body></html>

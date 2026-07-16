@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="icon" href="img/icon.png" type="image/png">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="css/lightgallery.css" rel="stylesheet">
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/lightgallery.js"></script>
+<script src="js/lg-fullscreen.js"></script>
+<script src="js/lg-zoom.js"></script>
+<script src="js/lg-autoplay.js"></script>
+<script src="js/lg-pager.js"></script>
+<script src="js/lg-thumbnail.js"></script>
+<script src="js/lg-hash.js"></script>
+<script src="js/lg-rotate.js"></script>
+</head>
+
+<body>
+
+<div id="header"><script>header();</script></div>
+
+<div id="titre">ARCHITECTURE</div>
+<hr id="hr_sep"/>
+
+<div class="demo-gallery">
+	<ul id="lightgallery" class="list-unstyled row">
+		<li data-src="gallery/photo_0009.jpg" data-sub-html="<h4>Nuit et brouillard sur Gréville-Hague (Manche)</h4><p></p>"><a href=""><img class="img-responsive" src="gallery/thumb/vignette_0009.jpg"></a>
+		<li data-src="gallery/photo_0064.jpg" data-sub-html="<h4>Phare du Créac'h (Ouessant)</h4><p></p>"><a href=""><img class="img-responsive" src="gallery/thumb/vignette_0064.jpg"></a>
+		<li data-src="gallery/photo_0067.jpg" data-sub-html="<h4>Dupont Circle (Washington DC)</h4><p></p>"><a href=""><img class="img-responsive" src="gallery/thumb/vignette_0067.jpg"></a>
+		<li data-src="gallery/photo_0094.jpg" data-sub-html="<h4>The Empire State Building</h4><p></p>"><a href=""><img class="img-responsive" src="gallery/thumb/vignette_0094.jpg"></a>
+	</ul>
+</div>
+		
+<script>
+	lightGallery(document.getElementById('lightgallery'), {
+		speed: 200,
+		mode: 'lg-fade'
+	});
+</script>
+
+
+<div id="footer">Textes & Photographies © Jocelyn DIOT | Toute reproduction ou représentation est interdite sans autorisation écrite de l'auteur.</div><br>
+
+</body></html>
